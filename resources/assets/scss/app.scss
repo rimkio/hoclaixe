@@ -21,8 +21,12 @@
 @import "~bootstrap/scss/tables";
 @import "~bootstrap/scss/transitions";
 
-// Utilities
+// Utilities 
 @import "~bootstrap/scss/utilities/api";
+
+//Slick
+@import '~slick-carousel/slick/slick';
+@import '~slick-carousel/slick/slick-theme';
 
 // Application
 @import "shared/all";

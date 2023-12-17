@@ -323,6 +323,7 @@ header.header-fixed {
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    position: relative;
 }
 
 .popup-menu .wrap__menu_mb ul li a:after {
@@ -355,6 +356,18 @@ div#hoclaixe-menu-open.show .close {
     z-index: 9999;
     animation: initial !important;
 }
+
+.popup-menu ul.wrap-lien-he:after {
+    content: '';
+    position: absolute;
+    left: -15px;
+    background-image: url("../images/bg-mobile.png");
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-position: left center;
+}
 /* End popup menu */
 
 body .hlx-page-hero {
@@ -363,4 +376,37 @@ body .hlx-page-hero {
 
 body .hlx-page-hero .col-content {
      margin-top: 0px;
+}
+
+/* CSS cho hiệu ứng loading */
+button.loading {
+    position: relative;
+}
+
+button.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    border: 4px solid #fff;
+    border-top: 4px solid #333;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+/* @keyframes cho quay */
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+.success-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #11542B;
+    font-weight: 600;
 }

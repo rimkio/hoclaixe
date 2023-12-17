@@ -23,6 +23,7 @@
         "aos": "^2.3.4",
         "bootstrap": "^5.3.2",
         "dom4": "^2.1.4",
-        "jquery": "^3.7.1"
+        "jquery": "^3.7.1",
+        "slick-carousel": "^1.8.1"
     }
 }

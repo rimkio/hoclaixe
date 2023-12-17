@@ -1,0 +1,143 @@
+.hlx-home-gallery {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: -109px;
+        z-index: 1;
+        height: 372px;
+        width: 442px;
+        background-image: url('../../images/hero-graphic.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &__wrap {
+        &-item {
+            .gallery__wrap {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+
+
+                a {
+                    width: 100%;
+                    max-width: calc(33.3333% - 32px);
+                    height: 367px;
+                    border-radius: 24px;
+                    border: 1px solid #D9D9D9;
+                    overflow: hidden;
+                    display: block;
+
+                    @include media-breakpoint-down(lg) {
+                        max-width: calc(50% - 32px);
+                    }
+
+                    @include media-breakpoint-down(md) {
+                        max-width: 100%;
+                    }
+
+                    img {
+                        height: 100%;
+                        width: 100%;
+                        object-position: center;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+        }
+
+
+    }
+
+    .gallery-slick-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gallery-slick {
+        position: relative;
+        display: inline-block;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        .slick-arrow {
+            left: unset;
+            right: unset;
+            position: absolute;
+            top: -4px;
+            left: 0;
+            transform: none;
+            width: 32px;
+            height: 10px;
+
+            &.slick-disabled {
+                &::after {
+                    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAzMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTIzIDFMMzEgOUgwIiBzdHJva2U9IiNEOUQ5RDkiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=');
+                }
+            }
+
+            &.slick-next {
+                right: 0;
+                left: unset;
+
+                &::after {
+                    transform: rotate(0deg);
+                }
+            }
+
+            &::before {
+                display: none;
+            }
+
+            &::after {
+                content: '';
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMTAiIHZpZXdCb3g9IjAgMCAzMiAxMCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggaWQ9IlZlY3RvciIgZD0iTTIzIDFMMzEgOUgwIiBzdHJva2U9IiMxMTU0MkIiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+Cjwvc3ZnPgo=');
+                position: absolute;
+                top: 0;
+                left: 0;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 32px;
+                height: 10px;
+                transform: scaleX(-1);
+            }
+        }
+
+        .slick-dots {
+            position: relative;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+
+            li {
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                background-color: #D9D9D9;
+
+                button {
+                    display: none;
+                }
+
+                &.slick-active {
+                    background-color: #11542B;
+                }
+            }
+        }
+    }
+}

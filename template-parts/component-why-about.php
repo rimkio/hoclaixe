@@ -16,5 +16,7 @@
                 endwhile; ?>
             </div>
         <?php endif; ?>
+
+        <span class="border-section"></span>
     </div>
 </div>

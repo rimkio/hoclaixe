@@ -1,0 +1,160 @@
+.hlx-home-hero {
+    padding-top: 134px;
+    padding-bottom: 90px;
+    position: relative;
+    overflow: hidden;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 87px;
+        padding-bottom: 56px;
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 134px;
+        right: -170px;
+        z-index: 1;
+        height: 372px;
+        width: 442px;
+        background-image: url('../../images/hero-graphic.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    &__wrap {
+        border-radius: 24px;
+        border: 1px solid var(--prim, #11542B);
+        background: #F9FFFB;
+        padding: 45px 80px 32px;
+        position: relative;
+
+        @include media-breakpoint-down(lg) {
+            padding: 21px 12px 24px;
+        }
+
+        &-content {
+            position: relative;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 34px;
+            }
+
+            &::before {
+                content: '';
+                bottom: -32px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 366px;
+                height: 228.171px;
+                position: absolute;
+                background-image: url(../../images/graphic-hero.png);
+                background-position: bottom center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                @include media-breakpoint-down(lg) {
+                    display: none;
+                }
+            }
+        }
+
+        &-form {
+            display: flex;
+            justify-content: flex-end;
+
+            .hlx-page-signup__wrap-form {
+                max-width: 433px;
+
+                @include media-breakpoint-down(lg) {
+                    max-width: 100%;
+                }
+            }
+        }
+
+
+        h1 {
+            color: var(--prim, #11542B);
+            font-family: Montserrat Alternates;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 64px;
+            /* 114.286% */
+            margin-bottom: 43px;
+
+            @include media-breakpoint-down(lg) {
+                font-size: 28px;
+                line-height: 32px;
+                /* 114.286% */
+                margin-bottom: 24px;
+            }
+        }
+
+        h2 {
+            color: #222;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px;
+            /* 150% */
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        &-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+
+                &:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    color: #222;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    /* 133.333% */
+                    margin-bottom: 0;
+
+                    @include media-breakpoint-down(md) {
+                        font-size: 14px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+
+        .hlx-page-signup__wrap-form {
+            form {
+                .field-wrap {
+                    width: 100%;
+                    max-width: 100%;
+
+                    button {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+    }
+}

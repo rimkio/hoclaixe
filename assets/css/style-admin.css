@@ -1,0 +1,35 @@
+.export-csv-form {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.export-csv-form h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.export-csv-form .field-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.export-csv-form .field-wrap select {
+    height: 50px;
+    font-size: 18px;
+    width: 400px;
+}
+
+.export-csv-form button#export-csv-button {
+    height: 50px;
+    width: 200px;
+    border: 0;
+    background: #11542B;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 18px;
+    cursor: pointer;
+}

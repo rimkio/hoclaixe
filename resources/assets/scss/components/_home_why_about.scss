@@ -1,4 +1,14 @@
 .hlx-home-why-about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    span.border-section {
+        border-top: 1px #F5F5F5 solid;
+        opacity: 1;
+        display: block;
+        margin-top: 100px;
+    }
+
     &__heading {
         color: #222;
         text-align: center;
@@ -9,5 +19,82 @@
         line-height: 36px;
         /* 100% */
         text-transform: uppercase;
+        position: relative;
+        padding-bottom: 11px;
+        margin-bottom: 60px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--prim, #11542B);
+            height: 4px;
+            width: 44px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        gap: 32px;
+        grid-template-columns: repeat(1, 1fr);
+
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        &-item {
+            width: 100%;
+
+            h3 {
+                color: #222;
+                font-family: Montserrat;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                /* 133.333% */
+                text-transform: uppercase;
+                margin-bottom: 16px;
+            }
+
+            p {
+                color: #222;
+                font-family: Montserrat;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                /* 150% */
+                margin-bottom: 0;
+            }
+        }
+
+        &-index {
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 34px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            height: 59px;
+            width: 59px;
+            /* 129.412% */
+            text-transform: capitalize;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 24px;
+            background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB3aWR0aD0iNTkiIGhlaWdodD0iNTkiIHZpZXdCb3g9IjAgMCA1OSA1OSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBpZD0iRWxsaXBzZSAxIiBjeD0iMjkuNSIgY3k9IjI5LjUiIHI9IjI5LjUiIGZpbGw9InVybCgjcGFpbnQwX2xpbmVhcl8zMl8yOTkwKSIvPgo8ZGVmcz4KPGxpbmVhckdyYWRpZW50IGlkPSJwYWludDBfbGluZWFyXzMyXzI5OTAiIHgxPSIyOSIgeTE9IjIuNSIgeDI9IjI5LjUiIHkyPSI1OSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjOTBDODQ1Ii8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzExNTQyQiIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=');
+        }
     }
 }
