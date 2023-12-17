@@ -1,0 +1,71 @@
+.hlx-page-hero {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &::before {
+        @include media-breakpoint-down(md) {
+            content: '';
+            position: absolute;
+            top: 34px;
+            right: 7px;
+            z-index: 1;
+            height: 137px;
+            width: 163px;
+            background-image: url('../../images/hero-graphic.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+
+    .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .col-content {
+        margin-top: 25px;
+    }
+
+    #breadcrumbs {
+        margin-bottom: 56px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 14px;
+        }
+    }
+
+    h1 {
+        padding-bottom: 24px;
+        margin-bottom: 24px;
+        position: relative;
+        line-height: 1.5;
+
+        @include media-breakpoint-down(md) {
+            padding-bottom: 8px;
+        }
+
+        &::after {
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 174px;
+            position: absolute;
+            height: 4px;
+            background: var(--prim, #11542B);
+
+        }
+    }
+
+    p {
+        max-width: 481px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+}

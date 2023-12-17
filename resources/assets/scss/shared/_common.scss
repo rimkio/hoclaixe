@@ -1,0 +1,21 @@
+body {
+   overflow-x: hidden;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+
+#breadcrumbs {
+   color: var(--prim, #11542B);
+   font-family: Montserrat;
+   font-size: 14px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 18px;
+   a{
+      
+   }
+}

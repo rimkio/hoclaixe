@@ -1,0 +1,139 @@
+@media screen and (max-width: 1600px) {
+
+}
+
+@media screen and (max-width: 1599px) {
+
+}
+
+@media screen and (max-width: 1400px) {
+
+}
+
+@media screen and (max-width: 1365px) {
+
+}
+
+@media screen and (max-width: 1199px) {
+    div#hoclaixe-menu-open {
+        display: block !important;
+        cursor: pointer;
+    }
+
+    header.hoclaixe-header .hoclaixe-header-menu-wrap {
+        display: none;
+    }
+
+    .wrapper_phone a span {
+        display: none;
+    }
+
+    .wrapper_phone a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .wrapper_phone {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    header.hoclaixe-header {
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.08);
+    }
+
+    header.hoclaixe-header .hoclaixe-header-logo img {
+        max-width: 67px;
+    }
+
+    .hoclaixe-header-inner {
+        padding: 7px 0;
+    }
+
+    body .hlx-page-hero {
+        padding-top: 90px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 991px) {
+    .col-md-4.map-hoc-lai-xe {
+        display: none;
+    }
+
+    .main-footer__widget .col-md-4 {
+        flex: 1;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+@media screen and (max-width: 600px) {
+    .main-footer__widget .col-md-4 {
+        flex: none;
+        width: 100%;
+    }
+
+    .main-footer__widget {
+        text-align: center;
+    }
+
+    .main-footer__widget-logo img {
+        max-width: 96px;
+        margin: 0 auto;
+    }
+
+    footer#site-footer ul {
+        justify-content: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    footer#site-footer ul.wrap-lien-he li {
+        justify-content: center;
+    }
+
+    .main-footer__widget-center ul#menu-menu-footer li {
+        text-align: center;
+    }
+
+    ul.wrap-lien-he li p, ul.wrap-lien-he li a {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    ul.wrap-lien-he li {
+        margin-top: 16px;
+    }
+
+    footer#site-footer {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+    footer#site-footer ul.main-footer__widget-social {
+        margin-top: 14px;
+        margin-bottom: 30px;
+    }
+
+    .main-footer__widget-center {
+        margin-top: 0px;
+    }
+
+    .main-footer__widget-center .menu-menu-footer-container {
+        margin-top: 18px;
+        border-top: 1px solid #F5F5F5;
+        padding-top: 18px;
+    }
+}
+
+

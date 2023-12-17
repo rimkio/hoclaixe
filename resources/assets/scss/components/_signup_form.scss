@@ -1,0 +1,176 @@
+.hlx-page-signup {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    @include media-breakpoint-down(md) {
+        padding-top: 26px;
+        padding-bottom: 40px;
+    }
+    &__wrap {
+        border-radius: 24px;
+        border: 1px solid var(--prim, #11542B);
+        background: #F9FFFB;
+        max-width: 994px;
+        margin: 0 auto;
+        padding: 36px 48px;
+        @include media-breakpoint-down(md) {
+            padding: 24px 12px 16px;
+        }
+
+        h2 {
+            color: #222;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px;
+            /* 100% */
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: #222;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 133.333%;
+            /* 133.333% */
+            margin: 0 auto 44px;
+            max-width: 511px;
+            @include media-breakpoint-down(md) {
+                font-size: 14px;
+            }
+        }
+
+        &-form {
+            form {
+                display: flex;
+                flex-wrap: wrap;
+                column-gap: 30px;
+                row-gap: 16px;
+                width: 100%;
+            }
+
+            .field-wrap {
+                width: 100%;
+                position: relative;
+
+                @include media-breakpoint-up(md) {
+                    max-width: calc(50% - 16px);
+                }
+
+                &:focus,
+                &:visited {
+                    label {
+                        color: var(--prim, #11542B);
+                    }
+
+                    input {
+                        border: 1px solid var(--prim, #11542B);
+                    }
+
+                }
+
+                &.field-wrap-submit {
+                    margin-top: 30px;
+                    text-align: right;
+                    max-width: 100%;
+                    @include media-breakpoint-down(md) {
+                        margin-top: 24px;
+                    }
+                }
+
+                label {
+                    color: var(--prim, #222);
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 12px;
+                    background: #FFF;
+                    padding: 2px 6px;
+                    position: absolute;
+                    top: -8px;
+                    left: 14px;
+                    /* 100% */
+                }
+
+                input {
+                    border-radius: 8px;
+                    border: 1px solid var(--prim, #D9D9D9);
+                    background: #FFF;
+                    color: #222;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 14px;
+                    height: 56px;
+                    /* 100% */
+                    padding: 10px 20px;
+                    outline: none;
+                    width: 100%;
+
+                    &:focus,
+                    &:visited {
+                        border: 1px solid var(--prim, #11542B);
+
+                        +label {
+                            color: var(--prim, #11542B);
+                        }
+                    }
+                }
+
+                select {
+                    border-radius: 8px;
+                    height: 56px;
+                    border: 1px solid #D9D9D9;
+                    background-color: #FFF;
+                    padding: 10px 20px;
+                    width: 100%;
+                    outline: none;
+                    position: relative;
+                    appearance: none;
+                    background-image: url('../../images/mingcute_down-line.svg');
+                    background-repeat: no-repeat;
+                    background-position: calc(100% - 16px) center;
+
+                    &:focus,
+                    &:visited {
+                        border: 1px solid var(--prim, #11542B);
+
+                        +label {
+                            color: var(--prim, #11542B);
+                        }
+                    }
+                }
+
+                button {
+                    outline: none;
+                    color: #FFF;
+                    text-align: center;
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 30px;
+                    /* 187.5% */
+                    border-radius: 28px;
+                    background: var(--prim, #11542B);
+                    cursor: pointer;
+                    border: 1px solid #11542B;
+                    padding: 12px 43px;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background: transparent;
+                        color: var(--prim, #11542B);
+                    }
+                }
+            }
+        }
+    }
+}

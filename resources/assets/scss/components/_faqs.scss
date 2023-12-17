@@ -1,0 +1,95 @@
+.hlx-page-faqs {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    @include media-breakpoint-down(md) {
+        padding-top: 14px;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        @include media-breakpoint-up(md) {
+            --bs-gutter-x: 60px;
+        }
+    }
+
+    &__list {
+        &-item {
+            border-top: 1px solid #E3E3E3;
+            padding-top: 24px;
+            padding-bottom: 24px;
+            padding-right: 100px;
+            width: 100%;
+            
+            @include media-breakpoint-down(md) {
+                padding-right: 50px;
+            }
+
+            &:first-child {
+                @include media-breakpoint-up(md) {
+                    border: none;
+                }
+            }
+
+            &.active {
+                .hlx-page-faqs__list-question {
+                    color: var(--prim, #11542B);
+
+                    &::before {
+                        background-image: url('../../images/faq-open.svg');
+                    }
+                }
+            }
+        }
+
+        &-question {
+            color: #303A42;
+            font-family: DM Sans;
+            font-size: 18.687px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 23.784px;
+
+            /* 127.273% */
+            margin-bottom: 0;
+            cursor: pointer;
+            position: relative;
+
+            &::before {
+                content: '';
+                top: 6px;
+                right: -70px;
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                background-image: url('../../images/faq-close.svg');
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                @include media-breakpoint-down(md) {
+                    top: 50%;
+                    transform: translateY(-50%);
+                    right: -50px;
+                }
+            }
+        }
+
+        &-anwser {
+            color: #303A42;
+            font-family: DM Sans;
+            font-size: 15.29px;
+            font-style: normal;
+            font-weight: 400;
+            margin-top: 12px;
+            line-height: 25.483px;
+            display: none;
+
+            /* 166.667% */
+            p {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
